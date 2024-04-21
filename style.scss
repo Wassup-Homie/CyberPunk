@@ -568,8 +568,8 @@ body {
     height: 11px;
 
     @media(min-width: 780px){
-      width: 50px;
-      height: 11px;
+      width: 90px;
+      height: 20px;
     }
   }
 
@@ -578,8 +578,8 @@ body {
     height: 44px;
     
     @media(min-width: 780px){
-      width: 90px;
-      height: 20px;
+      width: 320px;
+      height: 80px;
     }
   }
   }
@@ -683,11 +683,21 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 32px;
+
+    @media(min-width: 1024px){
+      max-width: 1280px;
+      margin: 0 auto;
+    }
   }
 }
 
 .display__icons{
   @media(min-width: 780px){
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  @media(min-width: 1024px){
     flex-direction: column;
     gap: 25px;
   }
