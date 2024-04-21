@@ -161,13 +161,34 @@
 
       <section class="deep">
         <div class="container">
-          <div class="display">
-            <img src="./images/cyber-woman-phone.png" alt="" />
-            <div class="display__icons">
-              <img src="./images/hp.svg" alt=".hp" />
-              <img src="./images/krest.svg" alt=".krest" />
-              <img src="./images/logo.svg" alt=".logo" />
+          <div class="dispaly__wrapper">
+            
+            <div class="display">
+              <picture>
+                <source
+                  media="(min-width:1280px)"
+                  srcset="./images/cyber-woman-desctop.png"
+                />
+
+                <source
+                  media="(min-width:1024px)"
+                  srcset="./images/cyber-woman-tablet.png"
+                />
+
+                <source
+                  media="(min-width:320px)"
+                  srcset="./images/cyber-woman-phone.png"
+                />
+                <img src="./images/cyber-woman-phone.png" alt=".monitor" />
+              </picture>
+
+              <div class="display__icons">
+                <img src="./images/hp.svg" alt=".hp" />
+                <img src="./images/krest.svg" alt=".krest" />
+                <img src="./images/logo.svg" alt=".logo" />
+              </div>
             </div>
+
             <div class="deep__wrapper">
               <h3 class="display__title">Полное погружение вместе с HP</h3>
               <p class="display__desc">
@@ -187,7 +208,9 @@
               </div>
               <button class="deep__btn">Подробнее</button>
             </div>
+
           </div>
+
         </div>
       </section>
     </main>
